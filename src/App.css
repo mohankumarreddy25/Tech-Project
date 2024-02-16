@@ -29,3 +29,10 @@ color: rgb(114, 112, 112);
   scale: 1.1;
   cursor: pointer;
 }
+@media only screen and (max-width: 767px) {
+  .ourAdvantage {
+      flex-direction: column; 
+    }
+}
+
+

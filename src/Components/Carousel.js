@@ -1,80 +1,85 @@
-import { Carousel } from 'bootstrap'
-import React from 'react'
-
-const carousel = () => {
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+function carousel() {  
   return (
-    <div className='mt-5'>
-      <div id="carouselExampleIndicators" className="carousel slide " data-bs-ride="carousel" >
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active  align-items-right bg-dark">
-            <div>
-              <div className="row">
-              <div className="col mt-5 my-5 text-left " style={{ marginLeft: '15rem' }}>
-                  <p className='text-white' >boat Airdropes 131 WX-j8697</p>
-
-                  <h4 className='text-white'>Featherweight For <br />
-                    Comport All-Day
-                  </h4>
-                  <p className='text-white'> @1099 <s>@2099</s></p>
-                  <button className='btn btn-danger btn-sm'>Shop Now</button>
-                </div>
-                <div className="col">
-                  <img classNameName='img-fluid' src={require('../Assets/images/products/boat410-2.png')} alt='' style={{ width: '300px', height: '300px' }} />
-                </div>
-              </div>
+    <Carousel className='bg-dark' controls={false} indicators={false} interval={3000}>
+      <Carousel.Item interval={3000}>
+        <div className="container text-center">
+          <div className="row align-items-center">
+            <div className="col text-white text-align-start ">
+              <h4>JBl Live 660NC</h4>
+              <h1>Keep The Noise Out,</h1>
+              <h1>Or in. You Choose</h1>
+              <h1 className="mt-4">₹9,999 <s style={{fontSize:'1.5rem'}}>₹14,999</s></h1>
+              <button
+                className="text-white mt-5"
+                style={{
+                  backgroundColor: "red",
+                  border: "none",
+                  padding: "8px 20px",
+                }}> 
+                 Shop Now
+              </button>
             </div>
-          </div>
-          <div className="carousel-item  bg-dark">
-            <div>
-              <div className="row">
-                <div className="col mt-5  text-left my-5" style={{ marginLeft: '15rem' }}>
-                  <p className='text-white' >Sony WX-j8697</p>
-
-                  <h4 className='text-white'>Give Your Favourite <br />
-                    Music A Boost.
-                  </h4>
-                  <p className='text-white'> @19,990</p>
-                  <button className='btn btn-danger btn-sm'>Shop Now</button>
-                </div>
-                <div className="col">
-                  <img classNameName='img-fluid' src={require('../Assets/images/products//sonyXb910n-1.png')} alt='' style={{ width: '300px', height: '300px' }} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item  bg-dark">
-            <div>
-              <div className="row">
-                <div className="col mt-5  text-left my-5" style={{ marginLeft: '15rem' }}>
-                  <p className='text-white' >boat Airdropes 131 WX-j8697</p>
-
-                  <h4 className='text-white'>Featherweight For <br />
-                    Comport All-Day
-                  </h4>
-                  <p className='text-white'> @1099 <s>@2099</s></p>
-                  <button className='btn btn-danger btn-sm'>Shop Now</button>
-                </div>
-                <div className="col">
-                  <img classNameName='img-fluid' src={require('../Assets/images/products/boat131-3.png')} alt='' style={{ width: '300px', height: '300px' }} />
-                </div>
-              </div>
+            <div className="col">
+              <img className="d-block w-100" src={require("../Assets/images/products/jbl660nc-1.png")} alt="First slide" />
             </div>
           </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  )
-}
+      </Carousel.Item>
 
-export default carousel
+      <Carousel.Item interval={3000}>
+        <div className="container text-center">
+          <div className="row align-items-center">
+            <div className="col text-white text-align-start">
+              <h4>boAt Airdopes 131</h4>
+              <h1>Featherweight For</h1>
+              <h1>Comfort All-Day.</h1>
+              <h1 className="mt-4">₹1,099 <s style={{fontSize:'1.5rem'}}>₹2,990</s></h1>
+              <button
+                className="text-white mt-5"
+                style={{
+                  backgroundColor: "red",
+                  border: "none",
+                  padding: "8px 20px",
+                }} >
+                Shop Now
+              </button>
+            </div>
+            <div className="col">
+              <img className="d-block w-100" src={require("../Assets/images/products/boat131-3.png")} alt="Second slide" />
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+
+      <Carousel.Item interval={3000}>
+        <div className="container text-center">
+          <div className="row align-items-center">
+            <div className="col text-white text-align-start">
+              <h4>boAt WH-XB910N</h4>
+              <h1>Give Your Favourite</h1>
+              <h1>Music A Boost.</h1>
+              <h1 className="mt-4">₹13,489 <s style={{fontSize:'1.5rem'}}>₹19,990</s></h1>
+              <button
+                className="text-white mt-5"
+                style={{
+                  backgroundColor: "red",
+                  border: "none",
+                  padding: "8px 20px",
+                }}
+              >
+                Shop Now
+              </button>
+            </div>
+            <div className="col">
+              <img className="d-block w-100" src={require("../Assets/images/products/boat410-2.png")} alt="Third slide" />
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+    </Carousel>
+  );
+};
+
+export default carousel;

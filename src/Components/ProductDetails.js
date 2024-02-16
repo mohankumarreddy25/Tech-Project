@@ -99,7 +99,6 @@ const ProductDetails = ({ product,getProductData,getCartData }) => {
             <div>
             </div>
             {/* specification overview revies starts here  */}
-
             <div className="container-fluid  text-white mt-5">
             <button className='btn btn-danger  ' style={{marginLeft:'45%'}}>Specification</button>
 
@@ -140,13 +139,10 @@ const ProductDetails = ({ product,getProductData,getCartData }) => {
                         <p>{item.review}</p>
                         <p>{item.rateCount}</p>
                       <hr className='text-white'/>
-
                     </div>
                 ))
             }
            </div>
-
-
            <div className='container-fluid'>
            <div class="row">
            {

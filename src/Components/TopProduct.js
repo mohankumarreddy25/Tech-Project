@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import Courosel from './Carousel'
 import ScrollingCarousel from './ScrollingCarousel'
 
-
 const TopProducts = ({ getProductData,Data,getCartData,menuitems,filterData,setData }) => {
   console.log('topproductsdata',Data);
 const navigate=useNavigate()
@@ -59,10 +58,10 @@ const navigate=useNavigate()
             ) 
           }
           
-          <div className="card d-flex justify-content-center align-items-center mx-auto mx-auto " style={{width:'22%',backgroundColor: ' rgb(20,18,20)',border: "0.1px solid rgb(114, 112, 112)"}} >
-  <div className="card-body justify-content-center align-items-center mx-auto mx-auto p-5">
+          <div className="card d-flex justify-content-center align-items-center mx-auto mx-auto " style={{width:'97%',backgroundColor: ' rgb(20,18,20)',border: "0.1px solid rgb(114, 112, 112)"}} >
+  <div className="card-body justify-content-center align-items-center mx-auto mx-auto p-5 " style={{}}>
    
-   <Link to="/Specification" className="btn btn-danger mt-5 ">Browse All products</Link>
+   <Link to="/Specification" className="btn btn-danger mt-4 ">Browse All products</Link>
   </div>
 </div>
         </div>

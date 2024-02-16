@@ -8,9 +8,6 @@ const Specification = ({ getProductData, Data, getCartData, menuitems, filterDat
     const [range, setrange] = useState(499)
     const [search, setsearch] = useState('')
     const [backgroundColor, setbackgroundColor] = useState('')
-
-
-
     const SendProductDetails = (item) => {
         getProductData(item)
 
@@ -66,7 +63,6 @@ const Specification = ({ getProductData, Data, getCartData, menuitems, filterDat
             return item.category === cat
         })
         setfilterData1(result)
-
     }
     const Earbuds = (cat) => {
         const result = productsData.filter((item) => {
@@ -74,32 +70,21 @@ const Specification = ({ getProductData, Data, getCartData, menuitems, filterDat
         })
         setbackgroundColor('red')
         setfilterData1(result)
-
-
     }
     const Earphones = (cat) => {
         const result = productsData.filter((item) => {
             return item.category === cat
         })
         setfilterData1(result)
-
     }
-
-  
-
     const toprated=()=>{
      const result=productsData.filter((item)=>{
         return item.rateCount===5
      })
      setfilterData1(result)
     }
-
-   
-
     const onChange=(e)=>{
-       setsearch(e.target.value)
-     
-        
+       setsearch(e.target.value)        
       }
 
       const filteredData =()=>{ productsData.filter((item) =>
@@ -126,7 +111,6 @@ const Specification = ({ getProductData, Data, getCartData, menuitems, filterDat
                            <li> <p onClick={() => lowestPrice('finalPrice')}>Price(lowest First)</p></li>
                            <li> <p>Price(High First)</p></li>
                            <li> <p onClick={()=>toprated()}>Top Rated</p></li>
-
                            </ul>
                         </div>
                         <h4 className='mt-5'>Filted By</h4>
@@ -136,14 +120,11 @@ const Specification = ({ getProductData, Data, getCartData, menuitems, filterDat
                         <h4>Brands</h4>
                         <div className='mx-4' style={{ cursor: 'pointer' }}>
                             <ul>
-
                                 <li> <p onClick={() => jblHandler('JBL')}>Jbl</p></li>
                                 <li> <p onClick={() => boatHandler('boAt')}>BoAt</p></li>
                                 <li> <p onClick={() => sonyHandler('Sony')}>Sony</p></li>
                             </ul>
                         </div>
-
-
                         <hr className='text-white' />
 
                         <h4>Catogories</h4>
@@ -154,7 +135,6 @@ const Specification = ({ getProductData, Data, getCartData, menuitems, filterDat
                                 <li> <p onClick={() => Headphones('Headphones')}>Headphones</p></li>
                                 <li> <p onClick={() => Neckbands('Neckbands')}>Neckbands</p></li>
                             </ul>
-
                         </div>
 
                         <div>

@@ -9,10 +9,9 @@ const Cart = ({ cartData, decrement, increment, deleteHandler }) => {
     })
     setPrice(totalprice)
   }, [cartData])
-  console.log('myprice', Price);
   return (
     <div className='container mt-5' style={{backgroundColor: "#000000"}}>
-    {cartData.length ===0 ?
+    {cartData.length === 0 ?
 
       <div className='emtycart ' style={{height:'300px'}}>
       <div style={{paddingTop:'100px'}}>
@@ -29,9 +28,7 @@ const Cart = ({ cartData, decrement, increment, deleteHandler }) => {
 </div>
       </div>
          </div>
-
     :
-
       <div className='cartitems'>
         <div className="container text-center">
           <div className="row align-items-start text-white">

@@ -1,10 +1,8 @@
 import React from 'react'
-
 const Footer = () => {
     return (
-
         <div>
-        <div>
+         <div>
 
             <div className="container-fluid text-left " style={{ backgroundColor: '#000000 ' }}>
                 <div className="row align-items-start p-4">
@@ -44,7 +42,6 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-            {/* Footer all righs reserved  */}          
    <div  style={{backgroundColor: "#000000"}}>
      <div className='d-flex justify-content-between align-items-center text-white container-fluid  ' style={{borderTop:'1px solid white '}}>
                 <div>
@@ -76,5 +73,4 @@ const Footer = () => {
 </div>
     )
 }
-
 export default Footer
